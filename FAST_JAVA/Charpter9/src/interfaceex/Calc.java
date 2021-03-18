@@ -12,5 +12,26 @@ public interface Calc {
 	
 //	public String stringAdd(String s1, String s2);
 	
+	default void description() {
+		System.out.println("정수 계산기를 구현합니다.");
+		myMethod();
+	}
 	
+	static int total(int[] arr) {
+		int total = 0;
+		
+		for(int i: arr) {
+			total += i;
+		}
+		mystaticMethod();
+		return total;
+	}
+
+	private void myMethod() {
+		System.out.println("private method");
+	}
+	
+	private static void mystaticMethod() {
+		System.out.println("private static method");
+	}
 }
