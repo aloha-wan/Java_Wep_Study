@@ -101,6 +101,8 @@ Class c = Class.forName("java.lang.String"); //동적 로딩
 >
 > 컴파일 타임에 체크 할 수 없으므로 해당 문자열에 대한 클래스가 없는 경우 예외(ClassNotFoundException)이 발생할 수 있음
 
+</br>
+
 
 
 
