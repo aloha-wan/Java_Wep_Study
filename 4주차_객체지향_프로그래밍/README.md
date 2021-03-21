@@ -1,9 +1,10 @@
-# **🎈chapter 10 자바 기본 클래스
+# **🎈chapter 10 자바 기본 클래스**
 
 ## 🔎 Object 클래스
 
-> 모든 클래스의 최상위 클래스<br>java.lang.Object 클래스<br>모든 클래스는 Object 클래스에서 상속 받음<br>모든 클래스는 Object 클래스의 메서드를 사용할 수 있음<br>모든 클래스는 Object 클래스의 일부 메서드를 재정의 하여 사용할 수 있음
+> 모든 클래스의 최상위 클래스<br>java.lang.Object 클래스
 >
+> 모든 클래스는 Object 클래스에서 상속 받음<br>모든 클래스는 Object 클래스의 메서드를 사용할 수 있음<br>모든 클래스는 Object 클래스의 일부 메서드를 재정의 하여 사용할 수 있음
 
 </br>
 
@@ -33,8 +34,11 @@
 
 ## 🔎 hashCode() 메서드
 
-> hashCode() 메서드의 반환 값 : 인스턴스가 저장된 가상머신의 주소를 10진수로 반환<br>두 개의 서로 다른 메모리에 위치한 인스턴스가 동일하다는 것은<br>논리적으로 동일 : equals() 의 반환값이 true<br>동일할  hashCode 값을 가짐 : hashCode() 의 반환 값이 동일
+> hashCode() 메서드의 반환 값 : 인스턴스가 저장된 가상머신의 주소를 10진수로 반환
 >
+> 두 개의 서로 다른 메모리에 위치한 인스턴스가 동일하다는 것은?
+>
+> > 논리적으로 동일 : equals() 의 반환값이 true<br>동일할  hashCode 값을 가짐 : hashCode() 의 반환 값이 동일
 
 </br>
 
@@ -58,6 +62,8 @@
 
 ## 🔎 Class 클래스 가져오기
 
+> 동적로딩을 할 때 주로 사용 많이한다.
+
 ```java
 String s = new String();
 Class c = s.getClass();
@@ -68,6 +74,36 @@ Class c = Class.forName("java.lang.String"); //동적 로딩
 ```
 
 </br>
+
+> 장점 : "java.lang.String"을 필요한 lib로 변경 가능하다.
+>
+> 단점 : 오타가 난다면 로딩 중에 오류가 날 수 있다.
+
+</br>
+
+## 🔎 reflection 프로그래밍
+
+> Class 클래스로부터 객체의 정보를 가져와 프로그래밍 하는 방식
+>
+> 로컬에 객체가 없고 자료형을 알 수 없는 경우 유용한 프로그래밍
+>
+> java.lang.reflect 패키지에 있는 클래스 활용
+
+</br>
+
+## 🔎 forName() 메서드와 동적로딩
+
+> Class 클래스 static 메서드
+>
+> 동적로딩이란 ? 컴파일 시에 데이터 타입이 모든 biding 되어 자료형이 로딩되는 것(static lodin)이 아니라 실행 중에 데이터 타입을 알고 bindin되는 방식
+>
+> 실행 시에 로딩되므로 경우에 따라 다른 클래스가 사용될 수 있어 유용함
+>
+> 컴파일 타임에 체크 할 수 없으므로 해당 문자열에 대한 클래스가 없는 경우 예외(ClassNotFoundException)이 발생할 수 있음
+
+
+
+
 
 
 
