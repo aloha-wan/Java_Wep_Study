@@ -103,7 +103,11 @@ Class c = Class.forName("java.lang.String"); //동적 로딩
 
 </br>
 
+## 🔎 String, Wrapper 클래스
 
+> 동적로딩이란 ? 컴파일 시에 데이터 타입이 모든 biding 되어 자료형이 로딩되는 것(static lodin)이 아니라 실행 중에 데이터 타입을 알고 bindin되는 방식
+>
+> 실행 시에 로딩되므로 경우에 따라 다른 클래스가 사용될 수 있어 유용함
 
 
 
