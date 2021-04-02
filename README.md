@@ -47,7 +47,7 @@
 
 </br>
 
-### 프로젝트이므로 따로 Repositories를 생성 했습니다. 이후 여기로 확인 부탁드립니다. 
+### 🧷 프로젝트이므로 따로 Repositories를 생성 했습니다. 이후 여기로 확인 부탁드립니다. ❗❗
 
 ### 🔎 [Spring_Boot_Project](https://github.com/aloha-wan/Spring_Boot_Project)
 
