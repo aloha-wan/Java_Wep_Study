@@ -82,12 +82,12 @@ Camel notation : numberOfStudent
 
 ## 🔎 기본 자료형
 
-||정수형|문자형|실수형|논리형|
-|---|---|---|---|---|
-|1byte|btye|||boolean|
-|2byte|short|char|||
-|4byte|int||float||
-|8byte|long||Double||
+|       | 정수형 | 문자형 | 실수형 | 논리형  |
+| ----- | ------ | ------ | ------ | ------- |
+| 1byte | btye   |        |        | boolean |
+| 2byte | short  | char   |        |         |
+| 4byte | int    |        | float  |         |
+| 8byte | long   |        | Double |         |
 
 </br>
 
@@ -368,7 +368,48 @@ Int num = ( 5 > 3 )? 10: 20;
 
 그림
 
+# **🎈chapter 04** 제어문
 
+</br>
 
+## 🔎 if 문, if -else 문
 
+조건식의 결과에 따라 수행문이 실행되는 조건문
 
+If(조건식){<br>        수행문;<br>}
+
+if(조건식){<br>        수행문1;<br>} else{<br>        수행문2;<br>}
+
+</br>
+
+## 🔎 if -else if -else 문
+
+하나의 조건에 대한 여러 경우에 대해 수행문이 각각 다른 경우
+
+if(조건식){<br>        수행문1;<br>} else if(조건식){<br>        수행문2;<br>} else if(조건식){<br>        수행문3;<br>}else{<br>        수행문4;<br>}
+
+</br>
+
+## 🔎 조건문과 조건 연산자
+
+if - else 문은 조건 연산자로 구현 할 수 있음
+
+### 📌 if-else 문
+
+If(a > b)<br>   max = a;<br>else<br>   max = b;
+
+### 📌 조건 연산자
+
+Max = (a > b) ? a : b;
+
+</br>
+
+## 🔎 switch-case 문
+
+조건이 정수, 문자열 값으로 그 값에 따라 수행 결과가 달라지는 경우
+
+if-else if-else와 같은 의미로 수행
+
+그림
+
+### 📌 자바 7버전부터 문자열 사용 가능
